@@ -1,0 +1,418 @@
+body {
+  /* background: #000000; */
+  background: linear-gradient(130deg,#000, #B3B5B8);
+	 background-size: 200% 200%;
+	 -webkit-animation: gradient 16s ease infinite;
+	 -moz-animation: gradient 16s ease infinite;
+	 animation: gradient 16s ease infinite;
+}
+.carousel{
+  width: 100%;
+  height: 45rem;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 5% 0%;
+  }
+
+  50% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 5% 0%;
+  }
+
+  50% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 5% 0%;
+  }
+
+  50% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
+
+.qoute-1 {
+  color: white;
+  font-size: 562%;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.qoute-2{
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 120%;
+}
+
+.carousel-item {
+  margin-top: 12%;
+  padding: 1% 1%;
+}
+
+.car-text {
+  text-align: left;
+  /* margin: 13rem 0 0 0; */
+  /* height: 30rem; */
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+  color: #b5b5b5;
+}
+
+/* accordion */
+@import url("https://fonts.googleapis.com/css?family=Sunflower:300,500,700");
+
+html {
+  line-height: 1.5;
+}
+
+.custom-accordion {
+  background: #8a6552;
+  color: #ffffff;
+  font-family: "Sunflower", sans-serif;
+  padding-bottom: 2rem;
+}
+
+.custom-accordion>.item {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+.custom-accordion>.item:last-of-type {
+  background: #462521;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.custom-accordion>.item:last-of-type>.icon {
+  color: #ffffff;
+}
+
+.custom-accordion>.item:nth-of-type(6) {
+  padding-bottom: 2rem;
+}
+
+.custom-accordion>.item>.icon {
+  color: #462521;
+  font-size: 2rem;
+}
+
+.custom-accordion>.item>.title {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) and (min-height: 270px) {
+  .custom-accordion {
+    display: table;
+    width: 100%;
+    margin: 5% 0;
+    height: 100vh;
+    max-height: 700px;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+
+  .custom-accordion>.item {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    transform-origin: 0 50%;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+
+
+  .custom-accordion>.item:hover:not(:last-of-type) {
+    transform: scaleX(2) translateX(-1px);
+    box-shadow: 0 0 3rem #301916;
+    background: #8a6552;
+    border-color: transparent;
+  }
+
+  .custom-accordion>.item:hover+.item {
+    opacity: 0.1;
+  }
+
+  .custom-accordion>.item:hover+.item:last-of-type {
+    opacity: 0.1;
+    background: #8a6552;
+  }
+
+  .custom-accordion>.item:not(:last-of-type) {
+    border-right: 1px solid #462521;
+  }
+
+  .custom-accordion>.item:last-of-type {
+    background: #462521;
+    width: 25%;
+    border-radius: 0;
+  }
+
+  .custom-accordion>.item:last-of-type .heart-icon {
+    font-size: 6rem;
+  }
+
+  .custom-accordion>.item:hover:last-of-type .heart-icon {
+    transform: scale(1.4);
+  }
+
+  .custom-accordion>.item:last-of-type>.title {
+    transform: rotate(0) translateX(-50%) translateY(-2.5rem);
+    padding: 0;
+    text-align: center;
+  }
+
+  .custom-accordion>.item:last-of-type>.content {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.icon {
+    transform: scaleX(0.5);
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.title {
+    transform: scaleX(0.5) translateX(-50%);
+    background: #ca2e55;
+    text-align: center;
+    padding: 0;
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.title>.text {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .custom-accordion>.item:hover:not(:last-of-type)>.content {
+    opacity: 1;
+  }
+
+  .custom-accordion>.item>.icon {
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    color: #ffffff;
+  }
+
+  .custom-accordion>.item>.title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1.5rem;
+    width: 200%;
+    text-align: left;
+    transform-origin: 0 50%;
+    transform: rotate(-90deg);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    font-size: 1.2rem;
+  }
+
+  .custom-accordion>.item>.title>.text {
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+
+  .custom-accordion>.item>.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%) scaleX(0.5);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    opacity: 0;
+    padding: 1rem;
+    pointer-events: none;
+  }
+}
+
+.heart-icon {
+  color: #ca2e55;
+  font-size: 3rem;
+  transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+}
+
+/* COUNTER */
+.counter-container{
+  color: white;
+
+}
+
+
+.coun {
+  text-align: center;
+  padding-bottom: 50px;
+  border-right: 0.1rem dashed white width 75%;
+}
+
+.coun:last-child {
+  border-right: 0px solid white;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+i {
+  font-size: 20px !Important;
+}
+
+@media (max-width: 767px) {
+  .coun {
+    border-right: 0px dashed white;
+    border-bottom: 2px dashed white;
+    width: 50%;
+    margin: auto auto;
+  }
+
+  /* .coun:last-child {
+    border-bottom: 0px dashed white;
+  } */
+}
+
+/* Testimonials */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+.testimonial{
+    background:#f5f5f5;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    width: 90%;
+    margin:100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1.2%;
+    box-sizing: border-box;
+    padding:20px;
+
+}
+
+.testimonial .box{
+    position: relative;
+    padding: 15% 7.5% 7.5%;
+    transition: 0.5s;
+    text-align:center;
+    background:#fff;
+}
+
+.testimonial .box:hover {
+    background: #ff0057;
+}
+.testimonial .box p{
+    margin:0;
+    padding:0;
+    transition: 0.5s;
+}
+
+.testimonial .box h4{
+    margin:20px 0 0;
+    padding:0;
+    transition: 0.5s;
+    font-size:18px;
+    font-weight:700;
+    line-height:20px;
+    text-transform:uppercase;
+    color:#ff0057;
+}
+.testimonial .box h4 span{
+    font-weight:600;
+    font-size:14px;
+    color: #c5c5c5;
+    transition: 0.5s;
+}
+.testimonial .box:hover p,
+.testimonial .box:hover h4,
+.testimonial .box:hover h4 span{
+    color:#fff;
+}
+
+.testimonial .box .imgBox{
+    position:absolute;
+    top: -60px;
+    left:50%;
+    width:120px;
+    height:120px;
+    transform: translateX(-50%);
+    margin:0 auto 20px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.img{
+    width:120px;
+    height:120px;
+}
+
+.testimonial .box:before{
+    content:'';
+    position:absolute;
+    top:1%;
+    right:7.5%;
+    width:80px;
+    height:80px;
+    background: url(https://www.pinpng.com/pngs/m/0-6036_quote-icon-png-transparent-png.png);
+    background-size:cover;
+    opacity:0.5;
+    pointer-events:none;
+    transition:.5s;}
+
+.testimonial .box:hover:before{
+    transform: translateY(-60px);
+    opacity:1;
+}
+
+.testimonial .box:after{
+    content:'';
+    position:absolute;
+    bottom:2px;
+    left:40px;
+    width:80px;
+    height:80px;
+    background: url(https://www.pinpng.com/pngs/m/0-6036_quote-icon-png-transparent-png.png);
+    background-size:cover;
+    opacity:0.5;
+    pointer-events:none;
+    transition:.5s;
+    transform: rotate(180deg) translateY(0px);
+}
+
+.testimonial .box:hover:after{
+    transform: rotate(180deg) translateY(-60px);
+    opacity:1;
+}
+
+@media (max-width: 991px)
+{
+    .testimonial .box{
+        margin-top:80px;
+    }
+}
