@@ -1,14 +1,11 @@
+/* Background */
 body {
   /* background: #000000; */
-  background: linear-gradient(130deg,#000, #B3B5B8);
+  background: linear-gradient(130deg,#000, #8CC63F);
 	 background-size: 200% 200%;
 	 -webkit-animation: gradient 16s ease infinite;
 	 -moz-animation: gradient 16s ease infinite;
 	 animation: gradient 16s ease infinite;
-}
-.carousel{
-  width: 100%;
-  height: 45rem;
 }
 
 @-webkit-keyframes gradient {
@@ -53,9 +50,38 @@ body {
   }
 }
 
+/* NAVBAR */
+.container-fluid{
+  padding-left: 0px;
+}
+.navbar{
+  z-index: 9999;
+  width: 100%;
+        position: fixed;
+        background: #000;
+}
+.collapse{
+  position: fixed;
+  width: 97%;
+}
+.navbar-nav{
+  text-align: right;
+}
+.navbar-custom .nav-item:hover .nav-link {
+  color: #b5b5b5;
+}
+/* CAROUSEL */
+.carousel{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+
+
 .qoute-1 {
   color: white;
-  font-size: 562%;
+  font-size: 10vh;
   font-family: Helvetica;
   font-weight: bold;
 }
@@ -64,13 +90,14 @@ body {
   color: white;
   font-family: Helvetica;
   font-weight: lighter;
-  font-size: 120%;
+  font-size: 2vh;
 }
 
 .carousel-item {
-  margin-top: 12%;
+  margin-top: 30vh;
   padding: 1% 1%;
 }
+
 
 .car-text {
   text-align: left;
@@ -78,9 +105,7 @@ body {
   /* height: 30rem; */
 }
 
-.navbar-custom .nav-item:hover .nav-link {
-  color: #b5b5b5;
-}
+
 
 /* accordion */
 @import url("https://fonts.googleapis.com/css?family=Sunflower:300,500,700");
@@ -129,9 +154,9 @@ html {
   .custom-accordion {
     display: table;
     width: 100%;
-    margin: 5% 0;
-    height: 100vh;
-    max-height: 700px;
+    margin: 2% 0;
+    height: 60vh;
+    max-height: 900px;
     overflow: hidden;
     padding-bottom: 0;
   }
@@ -261,9 +286,10 @@ html {
 }
 
 /* COUNTER */
+
 .counter-container{
   color: white;
-
+  padding-top: 10vh;
 }
 
 
@@ -290,7 +316,7 @@ i {
   .coun {
     border-right: 0px dashed white;
     border-bottom: 2px dashed white;
-    width: 50%;
+    width: 80%;
     margin: auto auto;
   }
 
@@ -302,13 +328,15 @@ i {
 /* Testimonials */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
 .testimonial{
+    position:relative;
+    height: 80%;
     background:#f5f5f5;
     align-items:center;
-    display:flex;
     justify-content: center;
     font-family: 'Poppins',sans-serif;
-    width: 90%;
-    margin:100px auto;
+    max-width: none;
+    width: 95%;
+    margin:50px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1.2%;
@@ -319,7 +347,7 @@ i {
 
 .testimonial .box{
     position: relative;
-    padding: 15% 7.5% 7.5%;
+    padding: 5% 7.5% 7.5%;
     transition: 0.5s;
     text-align:center;
     background:#fff;
@@ -379,7 +407,7 @@ i {
     right:7.5%;
     width:80px;
     height:80px;
-    background: url(https://www.pinpng.com/pngs/m/0-6036_quote-icon-png-transparent-png.png);
+    background: url(https://www.pinclipart.com/picdir/big/99-990193_inspire-into-action-is-for-every-woman-quotation.png);
     background-size:cover;
     opacity:0.5;
     pointer-events:none;
@@ -392,12 +420,12 @@ i {
 
 .testimonial .box:after{
     content:'';
-    position:absolute;
+    position:relative;
     bottom:2px;
     left:40px;
     width:80px;
     height:80px;
-    background: url(https://www.pinpng.com/pngs/m/0-6036_quote-icon-png-transparent-png.png);
+    background: url(https://www.pinclipart.com/picdir/big/99-990193_inspire-into-action-is-for-every-woman-quotation.png);
     background-size:cover;
     opacity:0.5;
     pointer-events:none;
