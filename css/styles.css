@@ -129,7 +129,7 @@ body {
   margin-left: 1vh;
 }
 .carousel-item:hover hr{
-  background-color: #8CC63F;
+  background-color: #c1ff00;
   height: .5vh;
   width: 80vh;
   margin-left: 1vh;
@@ -148,7 +148,7 @@ html {
 }
 
 .custom-accordion {
-  background: #c1ff00;
+  background: #8CC63F;
   color: #ffffff;
   font-family: "Sunflower", sans-serif;
   padding-bottom: 2rem;
