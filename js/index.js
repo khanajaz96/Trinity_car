@@ -13,4 +13,4 @@ $('.counter').counterUp({
 });
 $('.counter').addClass('animated fadeInDownBig');
 $('h3').addClass('animated fadeIn');
-// hr
+// SERVICES 3D carousel
