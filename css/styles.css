@@ -1,7 +1,7 @@
 /* Background */
 body {
   background: #000000;
-  /* background: linear-gradient(130deg, #000, #8CC63F);
+  /* background: linear-gradient(130deg, #000, #c1ff00);
   background-size: 200% 200%;
   -webkit-animation: gradient 16s ease infinite;
   -moz-animation: gradient 16s ease infinite;
@@ -10,7 +10,7 @@ body {
   flex-direction: column;
 }
 
-@-webkit-keyframes gradient {
+/* @-webkit-keyframes gradient {
   0% {
     background-position: 5% 0%;
   }
@@ -50,7 +50,7 @@ body {
   100% {
     background-position: 5% 0%;
   }
-}
+} */
 
 /* NAVBAR */
 .container-fluid {
@@ -73,7 +73,8 @@ body {
 }
 
 .navbar-custom .nav-item:hover .nav-link {
-  color: #8CC63F;
+  color: #c1ff00;
+  text-decoration: 2px underline dotted;
 }
 
 .navbar-fixed-top.scrolled {
@@ -140,7 +141,7 @@ html {
 }
 
 .custom-accordion {
-  background: #8CC63F;
+  background: #c1ff00;
   color: #ffffff;
   font-family: "Sunflower", sans-serif;
   padding-bottom: 2rem;
@@ -175,7 +176,7 @@ html {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 800px) and (min-height: 270px) {
+@media screen and (min-width: 1000px) and (min-height: 270px) {
   .custom-accordion {
     display: table;
     width: 100%;
@@ -198,7 +199,7 @@ html {
   .custom-accordion>.item:hover:not(:last-of-type) {
     transform: scaleX(2) translateX(-1px);
     box-shadow: 0 0 3rem #301916;
-    background: #8CC63F;
+    background: #c1ff00;
     border-color: transparent;
   }
 
@@ -208,7 +209,7 @@ html {
 
   .custom-accordion>.item:hover+.item:last-of-type {
     opacity: 0.1;
-    background: #8CC63F;
+    background: #c1ff00;
   }
 
   .custom-accordion>.item:not(:last-of-type) {
@@ -1431,7 +1432,7 @@ footer {
 .about-us hr {
   width: 20vh;
   height: 0.5vh;
-  background-color: #8CC63F;
+  background-color: #c1ff00;
 }
 
 .about-us-intro {
@@ -1462,7 +1463,7 @@ footer {
 }
 .right-cont h2{
   margin-top: 3vh;
-  color: #8CC63F;
+  color: #c1ff00;
   font-size: 3vw;
 }
 .right-cont h4{
@@ -1474,10 +1475,10 @@ footer {
   overflow: scroll;
 }
 .strong-intro{
-  color: #8CC63F;
+  color: #c1ff00;
 }
 .vl {
-  border-left: 10px solid #8CC63F;
+  border-left: 10px solid #c1ff00;
   height: 110vh;
 }
 
